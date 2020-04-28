@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SafaricomMobileAppUMock.Views.VerifyNumberPage"
+             BackgroundColor="{x:StaticResource PrimaryBackground}">
+    <ContentPage.Content >
+        <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" >
+                <Grid.RowDefinitions >
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0" 
+                       Source="simpleTransparentForYou.png" 
+                       VerticalOptions="FillAndExpand" 
+                       HorizontalOptions="CenterAndExpand"
+                       Margin="0,50,0,0"
+                       WidthRequest="280"/>
+
+                <StackLayout Grid.Row="1" HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand"  WidthRequest="330">
+                    <Label x:Name="lblVerifyMessage" FontFamily="{StaticResource CenturyGothicBold}" Text="Your Mobile Number was  verified successfully!" HorizontalOptions="CenterAndExpand"  Margin="0,60,0,0"/>
+                    <Frame BorderColor="{x:StaticResource Primary}" CornerRadius="5" BackgroundColor="#e3eaf2"  HorizontalOptions="CenterAndExpand" Padding="-5,-5,-5,-5" Margin="0,30,0,0" HasShadow="False">
+                        <Entry x:Name="txtPhoneNumber" Text="0702740041" Placeholder="Enter Phone Number"   HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" WidthRequest="250" HeightRequest="60"  Margin="5,0,0,-3.5"  />
+                    </Frame>
+                    <Label x:Name="lblEnterEmailMessage" FontFamily="{StaticResource AbsaraSans}" Text="Please Enter Your Email ID to receive your one time password" HorizontalOptions="Center" Margin="0,20,0,0" FontSize="Small" />
+
+                    <Frame BorderColor="{x:StaticResource Primary}"  CornerRadius="8" BackgroundColor="#e3eaf2" HorizontalOptions="CenterAndExpand" Padding="-5,-5,-5,-5" Margin="0,5,0,0">
+                        <Entry x:Name="txtEmail" Placeholder="Email(optional)"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" WidthRequest="280" HeightRequest="60"  Margin="5,0,0,-3.5"  />
+                    </Frame>
+                    <Label  x:Name="txtTapMessage" Text="Kindly Tap on Generate Pin to continue" HorizontalOptions="Center" Margin="0,20,0,0" />
+
+                    <Frame Padding="0"  Margin="0,20,0,0" HasShadow="True" HorizontalOptions="CenterAndExpand" WidthRequest="300">
+                    <Button Text="Generate Pin" HorizontalOptions="FillAndExpand" BackgroundColor="{x:StaticResource Primary}" TextColor="White" />
+                    </Frame>
+                    <Label x:Name="lblDataConsumedMessage" Text="Please note Data consumed on this app is free." HorizontalOptions="CenterAndExpand" Margin="0,5,0,0" />
+
+                    <Image
+                       Source="bottomLogoSafaricom.png" 
+                       VerticalOptions="FillAndExpand" 
+                       HorizontalOptions="CenterAndExpand"
+                      />
+
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

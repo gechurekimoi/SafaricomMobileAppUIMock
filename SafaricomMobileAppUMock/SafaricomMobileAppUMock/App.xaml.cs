@@ -14,7 +14,7 @@ namespace SafaricomMobileAppUMock
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
-            MainPage = new MainPage();
+            MainPage = new VerifyNumberPage();
         }
 
         protected override void OnStart()

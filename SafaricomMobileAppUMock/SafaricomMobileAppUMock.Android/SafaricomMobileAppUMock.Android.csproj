@@ -54,8 +54,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.4.0.991265" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
+    <PackageReference Include="Xamarin.Forms" Version="4.5.0.657" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.1" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -63,6 +63,28 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="Assets\BwGlennSansDEMO-Black.otf" />
+    <AndroidAsset Include="Assets\BwGlennSansDEMO-BlackItalic.otf" />
+    <AndroidAsset Include="Assets\BwGlennSansDEMO-Bold.otf" />
+    <AndroidAsset Include="Assets\BwGlennSansDEMO-BoldItalic.otf" />
+    <AndroidAsset Include="Assets\BwGlennSansDEMO-ExtraBold.otf" />
+    <AndroidAsset Include="Assets\BwGlennSansDEMO-ExtraBoldItalic.otf" />
+    <AndroidAsset Include="Assets\BwGlennSansDEMO-Hairline.otf" />
+    <AndroidAsset Include="Assets\BwGlennSansDEMO-HairlineItalic.otf" />
+    <AndroidAsset Include="Assets\BwGlennSansDEMO-Light.otf" />
+    <AndroidAsset Include="Assets\BwGlennSansDEMO-LightItalic.otf" />
+    <EmbeddedResource Include="Assets\BwGlennSansDEMO-Medium.otf" />
+    <AndroidAsset Include="Assets\BwGlennSansDEMO-MediumItalic.otf" />
+    <AndroidAsset Include="Assets\BwGlennSansDEMO-Regular.otf" />
+    <AndroidAsset Include="Assets\BwGlennSansDEMO-RegularItalic.otf" />
+    <AndroidAsset Include="Assets\BwGlennSansDEMO-Thin.otf" />
+    <AndroidAsset Include="Assets\BwGlennSansDEMO-ThinItalic.otf" />
+    <AndroidAsset Include="Assets\NanumGothic-Bold.ttf" />
+    <AndroidAsset Include="Assets\NanumGothic-ExtraBold.ttf" />
+    <AndroidAsset Include="Assets\NanumGothic-Regular.ttf" />
+    <AndroidAsset Include="Assets\AbsaraSans-Medium.otf" />
+    <AndroidAsset Include="Assets\CenturyGothic.ttf" />
+    <AndroidAsset Include="Assets\CenturyGothicBold.ttf" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
@@ -91,6 +113,12 @@
       <Project>{03B07F0A-0A5C-408B-9A69-C2C8A2F637C1}</Project>
       <Name>SafaricomMobileAppUMock</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\simpleTransparentForYou.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\bottomLogoSafaricom.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

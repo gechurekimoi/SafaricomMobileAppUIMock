@@ -10,10 +10,59 @@
         <ResourceDictionary>
             <!--Global Styles-->
             <Color x:Key="NavigationPrimary">#2196F3</Color>
+            <Color x:Key="Primary">#33ab3e</Color>
+            <Color x:Key="PrimaryDark">#189e7b</Color>
+            <Color x:Key="PrimaryBackground">#e3eaf2</Color>
+
+            <OnPlatform x:Key="BwGlennSans" x:TypeArguments="x:String">
+                <On Platform="Android">BwGlennSansDEMO-Medium.otf</On>
+                <On Platform="iOS">BwGlennSansDEMO-Medium.otf</On>
+            </OnPlatform>
+            
+            <OnPlatform x:Key="NanahumGothic" x:TypeArguments="x:String">
+                <On Platform="Android" >NanumGothic-Regular.ttf#Nanum Gothic</On>
+                <On Platform="iOS" >NanumGothic-Regular.ttf</On>
+            </OnPlatform>
+
+            <OnPlatform x:Key="NanahumGothicBold" x:TypeArguments="x:String">
+                <On Platform="Android" >NanumGothic-Bold.ttf#Nanum Gothic</On>
+                <On Platform="iOS" >NanumGothic-Bold.ttf</On>
+            </OnPlatform>
+
+            <OnPlatform x:Key="AbsaraSans" x:TypeArguments="x:String">
+                <On Platform="Android" >AbsaraSans-Medium.otf</On>
+                <On Platform="iOS" >AbsaraSans-Medium.otf</On>
+            </OnPlatform>
+
+            <OnPlatform x:Key="CenturyGothic" x:TypeArguments="x:String">
+                <On Platform="Android" >CenturyGothic.ttf</On>
+                <On Platform="iOS" >CenturyGothic.ttf</On>
+            </OnPlatform>
+
+            <OnPlatform x:Key="CenturyGothicBold" x:TypeArguments="x:String">
+                <On Platform="Android" >CenturyGothicBold.ttf</On>
+                <On Platform="iOS" >CenturyGothicBold.ttf</On>
+            </OnPlatform>
+            
             <Style TargetType="NavigationPage">
                 <Setter Property="BarBackgroundColor" Value="{StaticResource NavigationPrimary}" />
                 <Setter Property="BarTextColor" Value="White" />
             </Style>
+
+            <Style TargetType="Label" x:Key="Label">
+                <Setter Property="FontFamily" Value="{StaticResource BwGlennSans}"/>
+            </Style>
+
+            <Style TargetType="Editor">
+                <Setter Property="FontFamily" Value="{StaticResource BwGlennSans}"/>
+            </Style>
+
+            <Style TargetType="Button">
+                <Setter Property="FontFamily" Value="{StaticResource BwGlennSans}"/>
+            </Style>
+
+         
+          
         </ResourceDictionary>
     </Application.Resources>
     
