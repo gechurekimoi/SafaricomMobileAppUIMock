@@ -21,22 +21,22 @@
                        WidthRequest="280"/>
 
                 <StackLayout Grid.Row="1" HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand"  WidthRequest="330">
-                    <Label x:Name="lblVerifyMessage" FontFamily="{StaticResource CenturyGothicBold}" Text="Your Mobile Number was  verified successfully!" HorizontalOptions="CenterAndExpand"  Margin="0,60,0,0"/>
-                    <Frame BorderColor="{x:StaticResource Primary}" CornerRadius="5" BackgroundColor="#e3eaf2"  HorizontalOptions="CenterAndExpand" Padding="-5,-5,-5,-5" Margin="0,30,0,0" HasShadow="False">
-                        <Entry x:Name="txtPhoneNumber" Text="0702740041" Placeholder="Enter Phone Number"   HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" WidthRequest="250" HeightRequest="60"  Margin="5,0,0,-3.5"  />
+                    <Label x:Name="lblVerifyMessage" FontFamily="AbsaraSans-Bold" Text="Your mobile number was  verified successfully!" HorizontalOptions="CenterAndExpand"  Margin="0,80,0,0" WidthRequest="250" FontAttributes="Bold" FontSize="16"/>
+                    <Frame BorderColor="{x:StaticResource Primary}" CornerRadius="5" BackgroundColor="#ebeef2"  HorizontalOptions="CenterAndExpand" Padding="-5,-5,-5,-5" Margin="0,30,0,0" HasShadow="False">
+                        <Entry x:Name="txtPhoneNumber" Text="0702740041" Placeholder="Enter Phone Number"   HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" WidthRequest="250" HeightRequest="60"  Margin="5,0,0,-3.7"  />
                     </Frame>
-                    <Label x:Name="lblEnterEmailMessage" FontFamily="{StaticResource AbsaraSans}" Text="Please Enter Your Email ID to receive your one time password" HorizontalOptions="Center" Margin="0,20,0,0" FontSize="Small" />
+                    <Label x:Name="lblEnterEmailMessage" FontFamily="AbsaraSans-Medium" Text="Please enter your email ID to receive your One Time Password" HorizontalOptions="Center" WidthRequest="270" Margin="0,20,0,0" TextColor="Gray" />
 
-                    <Frame BorderColor="{x:StaticResource Primary}"  CornerRadius="8" BackgroundColor="#e3eaf2" HorizontalOptions="CenterAndExpand" Padding="-5,-5,-5,-5" Margin="0,5,0,0">
-                        <Entry x:Name="txtEmail" Placeholder="Email(optional)"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" WidthRequest="280" HeightRequest="60"  Margin="5,0,0,-3.5"  />
+                    <Frame BorderColor="{x:StaticResource Primary}"  CornerRadius="8" BackgroundColor="#ebeef2" HorizontalOptions="CenterAndExpand" Padding="-5,-5,-5,-5" Margin="0,5,0,0">
+                        <Entry x:Name="txtEmail" Placeholder="Email(optional)"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" WidthRequest="280" HeightRequest="60"  Margin="5,0,0,-3.7"  />
                     </Frame>
-                    <Label  x:Name="txtTapMessage" Text="Kindly Tap on Generate Pin to continue" HorizontalOptions="Center" Margin="0,20,0,0" />
+                    <Label  x:Name="txtTapMessage" Text="Kindly tap on Generate PIN to continue" HorizontalOptions="Center" Margin="0,20,0,0" FontFamily="AbsaraSans-Medium" TextColor="Gray"/>
 
                     <Frame Padding="0"  Margin="0,20,0,0" HasShadow="True" HorizontalOptions="CenterAndExpand" WidthRequest="300">
-                    <Button Text="Generate Pin" HorizontalOptions="FillAndExpand" BackgroundColor="{x:StaticResource Primary}" TextColor="White" />
+                    <Button x:Name="btnGeneratePin" Text="Generate PIN" HorizontalOptions="FillAndExpand" BackgroundColor="{x:StaticResource Primary}" TextColor="White" />
                     </Frame>
-                    <Label x:Name="lblDataConsumedMessage" Text="Please note Data consumed on this app is free." HorizontalOptions="CenterAndExpand" Margin="0,5,0,0" />
-
+                    <Label x:Name="lblDataConsumedMessage" FontFamily="CenturyGothicBold" Text="Please note Data consumed on this app is free." TextColor="#bababa"  HorizontalOptions="CenterAndExpand" Margin="0,5,0,0" />
+                    
                     <Image
                        Source="bottomLogoSafaricom.png" 
                        VerticalOptions="FillAndExpand" 

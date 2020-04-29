@@ -24,6 +24,11 @@ namespace SafaricomMobileAppUMock.Views
             txtPhoneNumber.VerticalTextAlignment = TextAlignment.Center;
             txtPhoneNumber.FontAttributes = FontAttributes.Bold;
             txtPhoneNumber.TextColor = Application.Current.Resources["Primary"]!=null? (Color)Application.Current.Resources["Primary"] : Color.DarkCyan;
+            txtPhoneNumber.FontFamily = "CenturyGothicBold";
+            btnGeneratePin.FontFamily = "AbsaraSans-Bold";
+           // btnGeneratePin.FontFamily = "CenturyGothicBold";
+            btnGeneratePin.FontSize = 20;
+            
             lblEnterEmailMessage.HorizontalTextAlignment = TextAlignment.Center;
             txtTapMessage.HorizontalTextAlignment = TextAlignment.Center;
             lblDataConsumedMessage.HorizontalTextAlignment = TextAlignment.Center;

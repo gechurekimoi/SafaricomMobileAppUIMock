@@ -90,6 +90,7 @@
     <BundleResource Include="Resources\AbsaraSans-Medium.otf" />
     <BundleResource Include="Resources\CenturyGothic.ttf" />
     <BundleResource Include="Resources\CenturyGothicBold.ttf" />
+    <BundleResource Include="Resources\AbsaraSans-Bold.otf" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
