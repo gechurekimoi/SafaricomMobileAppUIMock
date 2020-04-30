@@ -63,31 +63,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\BwGlennSansDEMO-Black.otf" />
-    <AndroidAsset Include="Assets\BwGlennSansDEMO-BlackItalic.otf" />
-    <AndroidAsset Include="Assets\BwGlennSansDEMO-Bold.otf" />
-    <AndroidAsset Include="Assets\BwGlennSansDEMO-BoldItalic.otf" />
-    <AndroidAsset Include="Assets\BwGlennSansDEMO-ExtraBold.otf" />
-    <AndroidAsset Include="Assets\BwGlennSansDEMO-ExtraBoldItalic.otf" />
-    <AndroidAsset Include="Assets\BwGlennSansDEMO-Hairline.otf" />
-    <AndroidAsset Include="Assets\BwGlennSansDEMO-HairlineItalic.otf" />
-    <AndroidAsset Include="Assets\BwGlennSansDEMO-Light.otf" />
-    <AndroidAsset Include="Assets\BwGlennSansDEMO-LightItalic.otf" />
-    <EmbeddedResource Include="Assets\BwGlennSansDEMO-Medium.otf" />
-    <AndroidAsset Include="Assets\BwGlennSansDEMO-MediumItalic.otf" />
-    <AndroidAsset Include="Assets\BwGlennSansDEMO-Regular.otf" />
-    <AndroidAsset Include="Assets\BwGlennSansDEMO-RegularItalic.otf" />
-    <AndroidAsset Include="Assets\BwGlennSansDEMO-Thin.otf" />
-    <AndroidAsset Include="Assets\BwGlennSansDEMO-ThinItalic.otf" />
-    <AndroidAsset Include="Assets\NanumGothic-Bold.ttf" />
-    <AndroidAsset Include="Assets\NanumGothic-ExtraBold.ttf" />
-    <AndroidAsset Include="Assets\NanumGothic-Regular.ttf" />
-    <AndroidAsset Include="Assets\AbsaraSans-Medium.otf" />
-    <AndroidAsset Include="Assets\CenturyGothic.ttf" />
-    <AndroidAsset Include="Assets\CenturyGothicBold.ttf" />
-    <AndroidAsset Include="Assets\AbsaraSans-Bold.otf" />
     <None Include="Resources\AboutResources.txt" />
-    <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>

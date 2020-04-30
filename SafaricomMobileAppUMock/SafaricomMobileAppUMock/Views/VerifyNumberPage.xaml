@@ -21,22 +21,84 @@
                        WidthRequest="280"/>
 
                 <StackLayout Grid.Row="1" HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand"  WidthRequest="330">
-                    <Label x:Name="lblVerifyMessage" FontFamily="BwGlennSansDEMO-Bold" Text="Your mobile number was  verified successfully!" HorizontalOptions="CenterAndExpand"  Margin="0,80,0,0" WidthRequest="250"  FontSize="14"/>
-                    <Frame BorderColor="{x:StaticResource Primary}" CornerRadius="5" BackgroundColor="#ebeef2"  HorizontalOptions="CenterAndExpand" Padding="-5,-5,-5,-5" Margin="0,30,0,0" HasShadow="False">
-                        <Entry x:Name="txtPhoneNumber" Text="0702740041" Placeholder="Enter Phone Number"   HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" WidthRequest="250" HeightRequest="60"  Margin="5,0,0,-3.7"  />
-                    </Frame>
-                    <Label x:Name="lblEnterEmailMessage" FontFamily="AbsaraSans-Medium" Text="Please enter your email ID to receive your One Time Password" HorizontalOptions="Center" WidthRequest="270" Margin="0,20,0,0" TextColor="Gray" />
-
-                    <Frame BorderColor="{x:StaticResource Primary}"  CornerRadius="8" BackgroundColor="#ebeef2" HorizontalOptions="CenterAndExpand" Padding="-5,-5,-5,-5" Margin="0,5,0,0">
-                        <Entry x:Name="txtEmail" Placeholder="Email(optional)"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" WidthRequest="280" HeightRequest="60"  Margin="5,0,0,-3.7"  />
-                    </Frame>
-                    <Label  x:Name="txtTapMessage" Text="Kindly tap on Generate PIN to continue" HorizontalOptions="Center" Margin="0,20,0,0" FontFamily="AbsaraSans-Medium" TextColor="Gray"/>
-
-                    <Frame Padding="0"  Margin="0,20,0,0" HasShadow="True" HorizontalOptions="CenterAndExpand" WidthRequest="300">
-                    <Button x:Name="btnGeneratePin" Text="Generate PIN" HorizontalOptions="FillAndExpand" BackgroundColor="{x:StaticResource Primary}" TextColor="White" />
-                    </Frame>
-                    <Label x:Name="lblDataConsumedMessage" FontFamily="CenturyGothicBold" Text="Please note Data consumed on this app is free." TextColor="#bababa"  HorizontalOptions="CenterAndExpand" Margin="0,5,0,0" />
+                    <Label x:Name="lblVerifyMessage" 
+                           Text="Your mobile number was  verified successfully!" 
+                           HorizontalOptions="CenterAndExpand"  
+                           Margin="0,80,0,0" 
+                           WidthRequest="250"  
+                           FontSize="14"
+                           Style="{x:StaticResource Label}"/>
                     
+                    <Frame BorderColor="{x:StaticResource Primary}" 
+                           CornerRadius="5" 
+                           BackgroundColor="#ebeef2"  
+                           HorizontalOptions="CenterAndExpand" 
+                           Padding="-5,-5,-5,-5" 
+                           Margin="0,30,0,0" 
+                           HasShadow="False">
+                        
+                        <Entry x:Name="txtPhoneNumber" 
+                               Text="0702740041" 
+                               Placeholder="Enter Phone Number"   
+                               HorizontalOptions="CenterAndExpand" 
+                               VerticalOptions="CenterAndExpand" 
+                               WidthRequest="250" 
+                               HeightRequest="60"  
+                               Margin="5,0,0,-3.7"  />
+                    
+                    </Frame>
+                    
+                    <Label x:Name="lblEnterEmailMessage" 
+                           FontFamily="AbsaraSans-Medium" 
+                           Text="Please enter your email ID to receive your One Time Password" 
+                           HorizontalOptions="Center" 
+                           WidthRequest="270" 
+                           Margin="0,20,0,0" 
+                           TextColor="Gray" />
+
+                    <Frame BorderColor="{x:StaticResource Primary}"  
+                           CornerRadius="8" 
+                           BackgroundColor="#ebeef2" 
+                           HorizontalOptions="CenterAndExpand" 
+                           Padding="-5,-5,-5,-5" 
+                           Margin="0,5,0,0">
+                        
+                        
+                            <Entry x:Name="txtEmail" 
+                                   Placeholder="Email (optional)"  
+                                   HorizontalOptions="CenterAndExpand" 
+                                   VerticalOptions="CenterAndExpand" 
+                                   WidthRequest="280" 
+                                   HeightRequest="60" 
+                                   Margin="5,0,0,-3.8"
+                                   />
+                    </Frame>
+                    <Label  x:Name="txtTapMessage" 
+                            Text="Kindly tap on Generate PIN to continue" 
+                            HorizontalOptions="Center" 
+                            Margin="0,20,0,0" 
+                            FontFamily="AbsaraSans-Medium" 
+                            TextColor="Gray"/>
+
+                    <Frame Padding="0"  
+                           Margin="0,20,0,0" 
+                           HasShadow="True" 
+                           HorizontalOptions="CenterAndExpand" 
+                           WidthRequest="300">
+
+                        <Button x:Name="btnGeneratePin" 
+                                Text="Generate PIN" 
+                                HorizontalOptions="FillAndExpand" 
+                                BackgroundColor="{x:StaticResource Primary}" 
+                                TextColor="White" />
+                    </Frame>
+                    <Label x:Name="lblDataConsumedMessage" 
+                               FontFamily="CenturyGothicBold" 
+                               Text="Please note Data consumed on this app is free." 
+                               TextColor="#bababa"  
+                               HorizontalOptions="CenterAndExpand" 
+                               Margin="0,5,0,0" />
+
                     <Image
                        Source="bottomLogoSafaricom.png" 
                        VerticalOptions="FillAndExpand" 

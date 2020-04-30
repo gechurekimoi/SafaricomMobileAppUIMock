@@ -68,29 +68,6 @@
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <BundleResource Include="Resources\BwGlennSansDEMO-Black.otf" />
-    <BundleResource Include="Resources\BwGlennSansDEMO-BlackItalic.otf" />
-    <BundleResource Include="Resources\BwGlennSansDEMO-Bold.otf" />
-    <BundleResource Include="Resources\BwGlennSansDEMO-BoldItalic.otf" />
-    <BundleResource Include="Resources\BwGlennSansDEMO-ExtraBold.otf" />
-    <BundleResource Include="Resources\BwGlennSansDEMO-ExtraBoldItalic.otf" />
-    <BundleResource Include="Resources\BwGlennSansDEMO-Hairline.otf" />
-    <BundleResource Include="Resources\BwGlennSansDEMO-HairlineItalic.otf" />
-    <BundleResource Include="Resources\BwGlennSansDEMO-Light.otf" />
-    <BundleResource Include="Resources\BwGlennSansDEMO-LightItalic.otf" />
-    <BundleResource Include="Resources\BwGlennSansDEMO-Medium.otf" />
-    <BundleResource Include="Resources\BwGlennSansDEMO-MediumItalic.otf" />
-    <BundleResource Include="Resources\BwGlennSansDEMO-Regular.otf" />
-    <BundleResource Include="Resources\BwGlennSansDEMO-RegularItalic.otf" />
-    <BundleResource Include="Resources\BwGlennSansDEMO-Thin.otf" />
-    <BundleResource Include="Resources\BwGlennSansDEMO-ThinItalic.otf" />
-    <BundleResource Include="Resources\NanumGothic-Bold.ttf" />
-    <BundleResource Include="Resources\NanumGothic-ExtraBold.ttf" />
-    <BundleResource Include="Resources\NanumGothic-Regular.ttf" />
-    <BundleResource Include="Resources\AbsaraSans-Medium.otf" />
-    <BundleResource Include="Resources\CenturyGothic.ttf" />
-    <BundleResource Include="Resources\CenturyGothicBold.ttf" />
-    <BundleResource Include="Resources\AbsaraSans-Bold.otf" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
