@@ -21,7 +21,7 @@
                        WidthRequest="280"/>
 
                 <StackLayout Grid.Row="1" HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand"  WidthRequest="330">
-                    <Label x:Name="lblVerifyMessage" FontFamily="AbsaraSans-Bold" Text="Your mobile number was  verified successfully!" HorizontalOptions="CenterAndExpand"  Margin="0,80,0,0" WidthRequest="250" FontAttributes="Bold" FontSize="16"/>
+                    <Label x:Name="lblVerifyMessage" FontFamily="BwGlennSansDEMO-Bold" Text="Your mobile number was  verified successfully!" HorizontalOptions="CenterAndExpand"  Margin="0,80,0,0" WidthRequest="250"  FontSize="14"/>
                     <Frame BorderColor="{x:StaticResource Primary}" CornerRadius="5" BackgroundColor="#ebeef2"  HorizontalOptions="CenterAndExpand" Padding="-5,-5,-5,-5" Margin="0,30,0,0" HasShadow="False">
                         <Entry x:Name="txtPhoneNumber" Text="0702740041" Placeholder="Enter Phone Number"   HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" WidthRequest="250" HeightRequest="60"  Margin="5,0,0,-3.7"  />
                     </Frame>

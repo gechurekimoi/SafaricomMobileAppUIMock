@@ -6,3 +6,4 @@ using Xamarin.Forms.Xaml;
 [assembly: ExportFont("AbsaraSans-Medium.otf", Alias = "AbsaraSans-Medium")]
 [assembly: ExportFont("CenturyGothic.ttf", Alias = "CenturyGothic")]
 [assembly: ExportFont("CenturyGothicBold.ttf", Alias = "CenturyGothicBold")]
+[assembly: ExportFont("BwGlennSansDEMO-Bold.otf", Alias = "BwGlennSansDEMO-Bold")]

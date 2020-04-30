@@ -13,6 +13,7 @@
   <ItemGroup>
     <None Remove="Resources\AbsaraSans-Bold.otf" />
     <None Remove="Resources\AbsaraSans-Medium.otf" />
+    <None Remove="Resources\BwGlennSansDEMO-Bold.otf" />
     <None Remove="Resources\CenturyGothic.ttf" />
     <None Remove="Resources\CenturyGothicBold.ttf" />
   </ItemGroup>
@@ -20,6 +21,7 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\AbsaraSans-Bold.otf" />
     <EmbeddedResource Include="Resources\AbsaraSans-Medium.otf" />
+    <EmbeddedResource Include="Resources\BwGlennSansDEMO-Bold.otf" />
     <EmbeddedResource Include="Resources\CenturyGothic.ttf" />
     <EmbeddedResource Include="Resources\CenturyGothicBold.ttf" />
   </ItemGroup>
