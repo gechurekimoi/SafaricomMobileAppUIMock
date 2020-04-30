@@ -36,5 +36,16 @@ namespace SafaricomMobileAppUMock.Views
 
         }
 
+        private void btnGeneratePin_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                Application.Current.MainPage = new LoginPage();
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("Oooops", "Something went wrong please try again", "OK");
+            }
+        }
     }
 }

@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SafaricomMobileAppUMock.Views.LoginPage"
+              BackgroundColor="{x:StaticResource PrimaryBackground}">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" >
+                <Grid.RowDefinitions >
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0" 
+                       Source="simpleTransparentForYou.png" 
+                       VerticalOptions="FillAndExpand" 
+                       HorizontalOptions="CenterAndExpand"
+                       Margin="0,100,0,0"
+                       WidthRequest="250"/>
+
+                <StackLayout Grid.Row="1" HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand"  WidthRequest="330">
+                    
+                    <Label x:Name="lblEnterEmailMessage" 
+                           FontFamily="AbsaraSans-Medium" 
+                           Text="We've sent the PIN." 
+                           HorizontalOptions="Center" 
+                           WidthRequest="270" 
+                           Margin="0,150,0,0" 
+                           TextColor="Gray"
+                           HorizontalTextAlignment="Center"/>
+                    
+                    <Label x:Name="lblEnterEmailMessage2" 
+                           FontFamily="AbsaraSans-Medium" 
+                           Text="You should get it soon." 
+                           HorizontalOptions="Center" 
+                           WidthRequest="270" 
+                           Margin="0,0,0,0" 
+                           TextColor="Gray"
+                           HorizontalTextAlignment="Center"/>
+
+                    <Frame BorderColor="{x:StaticResource Primary}"  
+                           CornerRadius="8" 
+                           BackgroundColor="#ebeef2" 
+                           HorizontalOptions="CenterAndExpand" 
+                           Padding="-5,-5,-5,-5" 
+                           Margin="0,5,0,0">
+
+
+                        <Entry x:Name="txtEmail" 
+                                   Placeholder="Enter PIN"  
+                                   HorizontalOptions="CenterAndExpand" 
+                                   VerticalOptions="CenterAndExpand" 
+                                   WidthRequest="280" 
+                                   HeightRequest="60" 
+                                   Margin="5,0,0,-3.8"
+                                   />
+                    </Frame>
+
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand"  Margin="0,20,0,0" >
+                        <CheckBox/>
+                        <Label  VerticalTextAlignment="Center" Style="{x:StaticResource Label}" TextColor="{x:StaticResource Primary}">
+                            <Label.FormattedText>
+                                <FormattedString >
+                                    <FormattedString.Spans>
+                                        <Span Text="I accept "/>
+                                        <Span Text="Terms  &amp; Conditions" TextDecorations="Underline"/>
+                                    </FormattedString.Spans>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal"  Margin="0,20,0,0" HeightRequest="60" >
+                        <Frame BorderColor="{x:StaticResource Primary}"  
+                               BackgroundColor="{x:StaticResource PrimaryBackground}" 
+                               Padding="5"
+                               >
+                            
+                           
+                            <Button x:Name="btnResend" 
+                                Text="Resend" 
+                                HorizontalOptions="CenterAndExpand" 
+                                BackgroundColor="{x:StaticResource PrimaryBackground}" 
+                                TextColor="{x:StaticResource Primary}" 
+                                WidthRequest="130"
+                                Style="{x:StaticResource Button}"
+                                 />
+                        </Frame>
+
+                        <Frame Padding="0"   
+                           HasShadow="True" 
+                           HorizontalOptions="CenterAndExpand" 
+                           >
+                            <Button x:Name="btnLogin" 
+                                Text="Login" 
+                                HorizontalOptions="CenterAndExpand" 
+                                BackgroundColor="{x:StaticResource Primary}" 
+                                TextColor="White"
+                                WidthRequest="130"
+                                    Style="{x:StaticResource Button}"
+                               />
+                        </Frame>
+                    </StackLayout>
+                 
+                    <Image
+                       Source="bottomLogoSafaricom.png" 
+                       VerticalOptions="FillAndExpand" 
+                       HorizontalOptions="CenterAndExpand"
+                      />
+
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

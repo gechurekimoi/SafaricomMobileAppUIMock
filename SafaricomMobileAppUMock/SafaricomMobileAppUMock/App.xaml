@@ -27,8 +27,9 @@
                 <Setter Property="FontFamily" Value="BwGlennSansDEMO-Bold"/>
             </Style>
 
-            <Style TargetType="Button">
+            <Style TargetType="Button" x:Key="Button">
                 <Setter Property="FontFamily" Value="BwGlennSansDEMO-Bold"/>
+                <Setter Property="FontSize" Value="16"/>
             </Style>
 
          

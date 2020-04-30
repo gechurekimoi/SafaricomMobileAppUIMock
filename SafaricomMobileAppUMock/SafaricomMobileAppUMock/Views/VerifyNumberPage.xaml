@@ -89,7 +89,8 @@
                         <Button x:Name="btnGeneratePin" 
                                 Text="Generate PIN" 
                                 HorizontalOptions="FillAndExpand" 
-                                BackgroundColor="{x:StaticResource Primary}" 
+                                BackgroundColor="{x:StaticResource Primary}"
+                                Clicked="btnGeneratePin_Clicked"
                                 TextColor="White" />
                     </Frame>
                     <Label x:Name="lblDataConsumedMessage" 
