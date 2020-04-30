@@ -73,37 +73,51 @@
                         </Label>
                     </StackLayout>
 
-                    <StackLayout Orientation="Horizontal"  Margin="0,20,0,0" HeightRequest="60" >
+                    <Grid HorizontalOptions="CenterAndExpand" Margin="0,20,0,0" HeightRequest="50">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
                         <Frame BorderColor="{x:StaticResource Primary}"  
                                BackgroundColor="{x:StaticResource PrimaryBackground}" 
-                               Padding="5"
+                               Padding="3"
+                               Grid.Column="0"
+                                 Margin="0,0,20,0"
                                >
-                            
-                           
+
+
                             <Button x:Name="btnResend" 
                                 Text="Resend" 
-                                HorizontalOptions="CenterAndExpand" 
+                                HorizontalOptions="Center" 
                                 BackgroundColor="{x:StaticResource PrimaryBackground}" 
                                 TextColor="{x:StaticResource Primary}" 
-                                WidthRequest="130"
+                                WidthRequest="120"
                                 Style="{x:StaticResource Button}"
+                              
+                                    
                                  />
                         </Frame>
 
                         <Frame Padding="0"   
                            HasShadow="True" 
                            HorizontalOptions="CenterAndExpand" 
+                                Grid.Column="1"
+                                  Margin="20,0,0,0"
                            >
                             <Button x:Name="btnLogin" 
                                 Text="Login" 
-                                HorizontalOptions="CenterAndExpand" 
+                                HorizontalOptions="Center" 
                                 BackgroundColor="{x:StaticResource Primary}" 
                                 TextColor="White"
                                 WidthRequest="130"
                                     Style="{x:StaticResource Button}"
+                                  
                                />
                         </Frame>
-                    </StackLayout>
+                    </Grid>
+                    
+                  
                  
                     <Image
                        Source="bottomLogoSafaricom.png" 
