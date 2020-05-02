@@ -14,24 +14,24 @@
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <Image Grid.Row="0" 
-                       Source="simpleTransparentForYou.png" 
+                       Source="simpleTransparentForYou.jpg" 
                        VerticalOptions="FillAndExpand" 
                        HorizontalOptions="CenterAndExpand"
                        Margin="0,50,0,0"
-                       WidthRequest="280"/>
+                       WidthRequest="250"/>
 
-                <StackLayout Grid.Row="1" HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand"  WidthRequest="330">
+                <StackLayout Grid.Row="1" HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand"  WidthRequest="300">
                     <Label x:Name="lblVerifyMessage" 
                            Text="Your mobile number was  verified successfully!" 
                            HorizontalOptions="CenterAndExpand"  
                            Margin="0,80,0,0" 
-                           WidthRequest="250"  
+                           WidthRequest="220"  
                            FontSize="14"
                            Style="{x:StaticResource Label}"/>
                     
                     <Frame BorderColor="{x:StaticResource Primary}" 
                            CornerRadius="5" 
-                           BackgroundColor="#ebeef2"  
+                           BackgroundColor="{x:StaticResource PrimaryBackground}"  
                            HorizontalOptions="CenterAndExpand" 
                            Padding="-5,-5,-5,-5" 
                            Margin="0,30,0,0" 
@@ -42,8 +42,8 @@
                                Placeholder="Enter Phone Number"   
                                HorizontalOptions="CenterAndExpand" 
                                VerticalOptions="CenterAndExpand" 
-                               WidthRequest="250" 
-                               HeightRequest="60"  
+                               WidthRequest="220" 
+                               HeightRequest="55"  
                                Margin="5,0,0,-3.7"  />
                     
                     </Frame>
@@ -52,25 +52,26 @@
                            FontFamily="AbsaraSans-Medium" 
                            Text="Please enter your email ID to receive your One Time Password" 
                            HorizontalOptions="Center" 
-                           WidthRequest="270" 
+                           WidthRequest="250" 
                            Margin="0,20,0,0" 
                            TextColor="Gray" />
 
                     <Frame BorderColor="{x:StaticResource Primary}"  
                            CornerRadius="8" 
-                           BackgroundColor="#ebeef2" 
+                           BackgroundColor="{x:StaticResource PrimaryBackground}" 
                            HorizontalOptions="CenterAndExpand" 
                            Padding="-5,-5,-5,-5" 
                            Margin="0,5,0,0">
                         
                         
                             <Entry x:Name="txtEmail" 
-                                   Placeholder="Email (optional)"  
+                                   Placeholder="  Email (optional)"  
                                    HorizontalOptions="CenterAndExpand" 
                                    VerticalOptions="CenterAndExpand" 
-                                   WidthRequest="280" 
-                                   HeightRequest="60" 
+                                   WidthRequest="250" 
+                                   HeightRequest="55" 
                                    Margin="5,0,0,-3.8"
+                                   FontFamily="AbsaraSans-Medium"
                                    />
                     </Frame>
                     <Label  x:Name="txtTapMessage" 
@@ -84,7 +85,7 @@
                            Margin="0,20,0,0" 
                            HasShadow="True" 
                            HorizontalOptions="CenterAndExpand" 
-                           WidthRequest="300">
+                           WidthRequest="270">
 
                         <Button x:Name="btnGeneratePin" 
                                 Text="Generate PIN" 
@@ -101,7 +102,7 @@
                                Margin="0,5,0,0" />
 
                     <Image
-                       Source="bottomLogoSafaricom.png" 
+                       Source="bottomLogoSafaricom.jpg" 
                        VerticalOptions="FillAndExpand" 
                        HorizontalOptions="CenterAndExpand"
                       />

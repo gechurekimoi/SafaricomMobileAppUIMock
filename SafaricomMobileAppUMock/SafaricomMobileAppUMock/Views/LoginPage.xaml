@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -42,19 +41,20 @@
 
                     <Frame BorderColor="{x:StaticResource Primary}"  
                            CornerRadius="8" 
-                           BackgroundColor="#ebeef2" 
+                           BackgroundColor="{x:StaticResource PrimaryBackground}" 
                            HorizontalOptions="CenterAndExpand" 
                            Padding="-5,-5,-5,-5" 
                            Margin="0,5,0,0">
 
 
                         <Entry x:Name="txtEmail" 
-                                   Placeholder="Enter PIN"  
+                                   Placeholder="  Enter PIN"  
                                    HorizontalOptions="CenterAndExpand" 
                                    VerticalOptions="CenterAndExpand" 
-                                   WidthRequest="280" 
-                                   HeightRequest="60" 
+                                   WidthRequest="250" 
+                                   HeightRequest="55" 
                                    Margin="5,0,0,-3.8"
+                                   FontFamily="AbsaraSans-Medium"
                                    />
                     </Frame>
 
@@ -83,7 +83,7 @@
                                BackgroundColor="{x:StaticResource PrimaryBackground}" 
                                Padding="3"
                                Grid.Column="0"
-                                 Margin="0,0,20,0"
+                                 Margin="0,0,5,0"
                                >
 
 
@@ -103,10 +103,10 @@
                            HasShadow="True" 
                            HorizontalOptions="CenterAndExpand" 
                                 Grid.Column="1"
-                                  Margin="20,0,0,0"
+                                  Margin="5,0,0,0"
                            >
                             <Button x:Name="btnLogin" 
-                                Text="Login" 
+                                Text="Log In" 
                                 HorizontalOptions="Center" 
                                 BackgroundColor="{x:StaticResource Primary}" 
                                 TextColor="White"
