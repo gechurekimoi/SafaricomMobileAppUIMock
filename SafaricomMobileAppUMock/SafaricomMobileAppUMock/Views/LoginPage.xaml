@@ -111,8 +111,9 @@
                                 BackgroundColor="{x:StaticResource Primary}" 
                                 TextColor="White"
                                 WidthRequest="130"
-                                    Style="{x:StaticResource Button}"
-                                  
+                                Style="{x:StaticResource Button}"
+                                    Clicked="btnLogin_Clicked"
+                              
                                />
                         </Frame>
                     </Grid>

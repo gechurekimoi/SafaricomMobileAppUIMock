@@ -29,5 +29,17 @@ namespace SafaricomMobileAppUMock.Views
                 DisplayAlert("Oooops!", "Soemthing went wrong", "OK");
             }
         }
+
+        private void btnLogin_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                Application.Current.MainPage = new MainPage();
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
     }
 }
