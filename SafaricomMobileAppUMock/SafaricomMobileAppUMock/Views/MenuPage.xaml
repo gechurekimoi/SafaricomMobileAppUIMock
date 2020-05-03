@@ -5,27 +5,79 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="SafaricomMobileAppUMock.Views.MenuPage"
-             Title="Menu">
+             Title="Menu"
+             xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:ffTransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations">
              
     <StackLayout VerticalOptions="FillAndExpand">
-        <ListView x:Name="ListViewMenu"
-                    HasUnevenRows="True">
-            <d:ListView.ItemsSource>
-                <x:Array Type="{x:Type x:String}">
-                    <x:String>Item 1</x:String>
-                    <x:String>Item 2</x:String>
-                </x:Array>
-            </d:ListView.ItemsSource>
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <Grid Padding="10">
-                            <Label Text="{Binding Title}" d:Text="{Binding .}" FontSize="20"/>
-                        </Grid>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+
+        <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <StackLayout Grid.Row="0"
+                         HorizontalOptions="FillAndExpand"
+                         HeightRequest="200"
+                         BackgroundColor="#1f1f1f">
+                <forms:CachedImage Source="https://img.icons8.com/ios-glyphs/100/000000/user-male-circle.png"
+                               LoadingPlaceholder= "LoaderImage"
+                                ErrorPlaceholder= "ErrorImage"
+                                CacheDuration= "50"
+                                RetryCount= "3"
+                                RetryDelay= "600"
+                                DownsampleToViewSize = "true"
+                               HorizontalOptions="CenterAndExpand"
+                               WidthRequest="100"
+                               HeightRequest="170"
+                                >
+                   
+                </forms:CachedImage>
+
+                <Label Text="JOHN GECHURE KIMOI" Style="{x:StaticResource Label}" HorizontalOptions="CenterAndExpand" TextColor="#ededed"/>
+            </StackLayout>
+            <ListView Grid.Row="1" x:Name="ListViewMenu"
+                    HasUnevenRows="True"
+                    BackgroundColor="#2a2a2a" 
+                    Margin="0,-7,0,0"
+                      SelectionMode="None"
+                      >
+                <d:ListView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Item 1</x:String>
+                        <x:String>Item 2</x:String>
+                    </x:Array>
+                </d:ListView.ItemsSource>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="*"/>
+                                   
+                                </Grid.ColumnDefinitions>
+                                <Image Grid.Column="0" Source="https://img.icons8.com/officexs/16/000000/small-lens.png"/>
+                                <Label Grid.Column="1" 
+                                       Text="{Binding Title}" 
+                                       d:Text="{Binding .}" 
+                                       FontSize="16" 
+                                       TextColor="#959595"
+                                       Style="{x:StaticResource Label}"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+        </Grid>
+        
+       
+        
+        
+       
     </StackLayout>
 
 </ContentPage>
