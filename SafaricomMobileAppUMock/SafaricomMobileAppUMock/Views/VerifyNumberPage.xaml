@@ -27,7 +27,7 @@
                            Margin="0,80,0,0" 
                            WidthRequest="220"  
                            FontSize="14"
-                           Style="{x:StaticResource Label}"/>
+                           Style="{x:StaticResource LabelBold}"/>
                     
                     <Frame BorderColor="{x:StaticResource Primary}" 
                            CornerRadius="5" 
@@ -92,7 +92,8 @@
                                 HorizontalOptions="FillAndExpand" 
                                 BackgroundColor="{x:StaticResource Primary}"
                                 Clicked="btnGeneratePin_Clicked"
-                                TextColor="White" />
+                                TextColor="White"
+                                Style="{x:StaticResource Button}"/>
                     </Frame>
                     <Label x:Name="lblDataConsumedMessage" 
                                FontFamily="CenturyGothicBold" 

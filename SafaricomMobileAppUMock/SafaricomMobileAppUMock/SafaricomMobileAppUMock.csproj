@@ -16,6 +16,10 @@
     <None Remove="Resources\BwGlennSansDEMO-Bold.otf" />
     <None Remove="Resources\CenturyGothic.ttf" />
     <None Remove="Resources\CenturyGothicBold.ttf" />
+    <None Remove="Resources\Volte Bold.otf" />
+    <None Remove="Resources\Volte Medium.otf" />
+    <None Remove="Resources\Volte Semibold.otf" />
+    <None Remove="Resources\Volte.otf" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,6 +28,10 @@
     <EmbeddedResource Include="Resources\BwGlennSansDEMO-Bold.otf" />
     <EmbeddedResource Include="Resources\CenturyGothic.ttf" />
     <EmbeddedResource Include="Resources\CenturyGothicBold.ttf" />
+    <EmbeddedResource Include="Resources\Volte Bold.otf" />
+    <EmbeddedResource Include="Resources\Volte Medium.otf" />
+    <EmbeddedResource Include="Resources\Volte Semibold.otf" />
+    <EmbeddedResource Include="Resources\Volte.otf" />
   </ItemGroup>
 
   <ItemGroup>

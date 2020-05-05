@@ -6,8 +6,18 @@ namespace SafaricomMobileAppUMock.Models
 {
     public enum MenuItemType
     {
-        Browse,
-        About
+        Home,
+        Settings,
+        MyProfile,
+        MPESA,
+        Services,
+        MyAccount,
+        NetPerform,
+        MyDataUsage,
+        KnowledgeBase,
+        StoreLocator,
+        TellaFriend,
+        FeedBackAndRating
     }
     public class HomeMenuItem
     {
