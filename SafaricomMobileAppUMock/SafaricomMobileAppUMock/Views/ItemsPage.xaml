@@ -6,7 +6,10 @@
              mc:Ignorable="d"
              x:Class="SafaricomMobileAppUMock.Views.ItemsPage"
              Title="{Binding Title}"
-             x:Name="BrowseItemsPage">
+             x:Name="BrowseItemsPage"
+           
+             >
+    
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Add" Clicked="AddItem_Clicked" />

@@ -22,7 +22,7 @@
                 <StackLayout Grid.Row="1" HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand"  WidthRequest="330">
                     
                     <Label x:Name="lblEnterEmailMessage" 
-                           FontFamily="AbsaraSans-Medium" 
+                           FontFamily="VolteBold" 
                            Text="We've sent the PIN." 
                            HorizontalOptions="Center" 
                            WidthRequest="270" 
@@ -31,7 +31,7 @@
                            HorizontalTextAlignment="Center"/>
                     
                     <Label x:Name="lblEnterEmailMessage2" 
-                           FontFamily="AbsaraSans-Medium" 
+                           FontFamily="VolteBold" 
                            Text="You should get it soon." 
                            HorizontalOptions="Center" 
                            WidthRequest="270" 
@@ -48,13 +48,15 @@
 
 
                         <Entry x:Name="txtEmail" 
-                                   Placeholder="  Enter PIN"  
+                                   Placeholder=" Enter PIN"  
                                    HorizontalOptions="CenterAndExpand" 
                                    VerticalOptions="CenterAndExpand" 
-                                   WidthRequest="250" 
+                                   WidthRequest="230" 
                                    HeightRequest="55" 
                                    Margin="5,0,0,-3.8"
-                                   FontFamily="AbsaraSans-Medium"
+                                   FontFamily="VolteBold"
+                                   FontSize="13"
+                                   
                                    />
                     </Frame>
 
@@ -93,8 +95,9 @@
                                 BackgroundColor="{x:StaticResource PrimaryBackground}" 
                                 TextColor="{x:StaticResource Primary}" 
                                 WidthRequest="120"
+                                
                                 Style="{x:StaticResource Button}"
-                              
+                              HeightRequest="50"
                                     
                                  />
                         </Frame>

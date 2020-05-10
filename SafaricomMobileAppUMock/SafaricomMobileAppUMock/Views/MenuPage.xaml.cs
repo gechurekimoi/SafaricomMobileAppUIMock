@@ -14,24 +14,35 @@ namespace SafaricomMobileAppUMock.Views
     {
         MainPage RootPage { get => Application.Current.MainPage as MainPage; }
         List<HomeMenuItem> menuItems;
+        public string DefaultIcon { get; set; }
         public MenuPage()
         {
             InitializeComponent();
+        }
+
+        protected override void OnAppearing()
+        {
+            SetUp();
+        }
+
+        private void SetUp()
+        {
+            DefaultIcon = "https://img.icons8.com/officexs/16/000000/small-lens.png";
 
             menuItems = new List<HomeMenuItem>
             {
-                new HomeMenuItem {Id = MenuItemType.Home, Title="Home" },
-                new HomeMenuItem {Id = MenuItemType.Settings, Title="Settings" },
-                new HomeMenuItem {Id = MenuItemType.MyProfile, Title="My Profile" },
-                new HomeMenuItem {Id = MenuItemType.MPESA, Title="M-PESA" },
-                new HomeMenuItem {Id = MenuItemType.Services, Title="Services" },
-                new HomeMenuItem {Id = MenuItemType.MyAccount, Title="My Account" },
-                new HomeMenuItem {Id = MenuItemType.NetPerform, Title="Net Perform" },
-                new HomeMenuItem {Id = MenuItemType.MyDataUsage, Title="My Data Usage" },
-                new HomeMenuItem {Id = MenuItemType.KnowledgeBase, Title="Knowledge Base" },
-                new HomeMenuItem {Id = MenuItemType.StoreLocator, Title="Store Locator" },
-                new HomeMenuItem {Id = MenuItemType.TellaFriend, Title="Tell A Friend" },
-                new HomeMenuItem {Id = MenuItemType.FeedBackAndRating, Title="Feedback &amp; Rating" }
+                new HomeMenuItem {Id = MenuItemType.Home, Title="Home" , Icon="home.png"  },
+                new HomeMenuItem {Id = MenuItemType.Settings, Title="Settings", Icon="settings.png" },
+                new HomeMenuItem {Id = MenuItemType.MyProfile, Title="My Profile"  , Icon="myProfile.png"},
+                new HomeMenuItem {Id = MenuItemType.MPESA, Title="M-PESA" , Icon="mpesa.png" },
+                new HomeMenuItem {Id = MenuItemType.Services, Title="Services" , Icon="services" },
+                new HomeMenuItem {Id = MenuItemType.MyAccount, Title="My Account" , Icon="myAccount.png" },
+                new HomeMenuItem {Id = MenuItemType.NetPerform, Title="Net Perform" , Icon="settings.png" },
+                new HomeMenuItem {Id = MenuItemType.MyDataUsage, Title="My Data Usage" , Icon="dataUsage.png" },
+                new HomeMenuItem {Id = MenuItemType.KnowledgeBase, Title="Knowledge Base" , Icon="knowledgeBase.png" },
+                new HomeMenuItem {Id = MenuItemType.StoreLocator, Title="Store Locator" , Icon="storeLocator.png" },
+                new HomeMenuItem {Id = MenuItemType.TellaFriend, Title="Tell A Friend" , Icon="tellAfriend.png" },
+                new HomeMenuItem {Id = MenuItemType.FeedBackAndRating, Title="Feedback & Rating" , Icon="userFeedback.png" }
 
             };
 

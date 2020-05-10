@@ -21,7 +21,11 @@
                          HorizontalOptions="FillAndExpand"
                          HeightRequest="170"
                          BackgroundColor="#1f1f1f">
-                <forms:CachedImage Source="https://img.icons8.com/ios-glyphs/100/000000/user-male-circle.png"
+                <StackLayout HorizontalOptions="EndAndExpand">
+                    <Image Source="x.png" HorizontalOptions="End" HeightRequest="40"/>
+                </StackLayout>
+                
+                <forms:CachedImage Source="userProfile.png"
                                LoadingPlaceholder= "LoaderImage"
                                 ErrorPlaceholder= "ErrorImage"
                                 CacheDuration= "50"
@@ -30,12 +34,18 @@
                                 DownsampleToViewSize = "true"
                                HorizontalOptions="CenterAndExpand"
                                WidthRequest="100"
-                               HeightRequest="140"
+                               HeightRequest="120"
+                              Margin="0,-30,0,0"
                                 >
                    
                 </forms:CachedImage>
 
-                <Label Text="JOHN GECHURE KIMOI" Style="{x:StaticResource LabelBold}" HorizontalOptions="CenterAndExpand" TextColor="#ededed"/>
+                <Label Text="JOHN GECHURE KIMOI" 
+                       FontAttributes="Bold" 
+                       Style="{x:StaticResource Label}" 
+                       HorizontalOptions="CenterAndExpand" 
+                       TextColor="#ededed"
+                       Margin="0,-5,0,0"/>
             </StackLayout>
             <ListView Grid.Row="1" x:Name="ListViewMenu"
                     HasUnevenRows="True"
@@ -54,18 +64,22 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Grid Padding="10">
+                            <Grid Padding="10" Margin="5,0,0,0">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="50"/>
                                     <ColumnDefinition Width="*"/>
                                    
                                 </Grid.ColumnDefinitions>
-                                <Image Grid.Column="0" Source="https://img.icons8.com/officexs/16/000000/small-lens.png"/>
+                                <Image Grid.Column="0" Source="{Binding Icon}" HeightRequest="22" VerticalOptions="Center"/>
                                 <Label Grid.Column="1" 
                                        Text="{Binding Title}" 
                                        d:Text="{Binding .}" 
                                        TextColor="#959595"
-                                       Style="{x:StaticResource Label}"/>
+                                       Style="{x:StaticResource Label}"
+                                       FontSize="14"
+                                       FontAttributes="Bold"
+                                       Margin="5,0,0,0"
+                                       VerticalOptions="Center"/>
                             </Grid>
                         </ViewCell>
                     </DataTemplate>

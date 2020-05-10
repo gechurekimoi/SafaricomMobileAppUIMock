@@ -154,4 +154,40 @@
   <ItemGroup>
     <BundleResource Include="Resources\bottomLogoSafaricom.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\userProfile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\myProfile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\myAccount.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\services.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\dataUsage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\knowledgeBase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\storeLocator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tellAfriend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\userFeedback.png" />
+  </ItemGroup>
 </Project>

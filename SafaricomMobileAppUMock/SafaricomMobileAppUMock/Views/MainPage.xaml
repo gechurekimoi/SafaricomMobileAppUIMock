@@ -5,7 +5,8 @@
             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
             mc:Ignorable="d"
             xmlns:views="clr-namespace:SafaricomMobileAppUMock.Views"
-            x:Class="SafaricomMobileAppUMock.Views.MainPage">
+            x:Class="SafaricomMobileAppUMock.Views.MainPage"
+            >
 
     <MasterDetailPage.Master>
         <views:MenuPage />
