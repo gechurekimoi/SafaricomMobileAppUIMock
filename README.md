@@ -3,4 +3,10 @@ This is a project to try and mock the safaricom mobile app user interface , am b
 
 ## Activity Number 1: Verify Phone Number 
 
-![Image of Verify Mobile Number](SafaricomMobileAppUMock/SafaricomMobileAppUMock/ScreenShots/verifyPhoneNumber.PNG)
+![Image of Verify Mobile Number](SafaricomMobileAppUMock/SafaricomMobileAppUMock/ScreenShots/verifyPageComparison.png)
+
+## Activity Number 2: Login Page
+![Image of Login Page](SafaricomMobileAppUMock/SafaricomMobileAppUMock/ScreenShots/loginPageComparison.png)
+
+## Activity Number 3: Navigation Drawer
+![Image of Navigation Drawer](SafaricomMobileAppUMock/SafaricomMobileAppUMock/ScreenShots/FlyoutComparison.png)
